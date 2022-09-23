@@ -1,0 +1,34 @@
+1) char* cp;
+   char ap[];
+   int** pp;
+
+2) yes it is possible:
+   int* a;
+   a = (int*)&a;
+
+3) p is a char* so the statement in the for loop,
+   p != '\0' will not work as the user intended as that compares
+   a pointer address to a null character. The user needs to
+   dereference p in order to compare it to the null terminator.
+
+4) a pointer and an array are the same in the fact that when you
+   refer to the variable name of an array, it returns a pointer
+   to the first spot in the array. They are different because an
+   array is a pointer to the start of an alloted amount of space 
+   in memory while an actual pointer only points to one memory address.
+
+5) 
+
+6) Exercise 1.3: The string that is passed through perror() is determined
+   by the user and must be declared constant so that no accidental
+   changes can be made to the pointer. The function strerror will only
+   receive error constants that are automatically set by the program
+   when an error occurs and doesn't require user attention to produce
+   the right message.
+
+7) Exercise 1.5: (2^31 ticks) / (100(tick/second) * 3600(seconds/hour) 
+                 * 24(hours/day)) = 248.55 days
+
+8) The size_t data type is 8 bytes on unix5 and is defined in the
+   header file stddef.h.
+

@@ -1,0 +1,28 @@
+int main(int argc, char* argv[])
+{
+   check number of args
+
+   if second arg is -d flag, set flag value
+
+   iterate through args
+
+      if set does not start and end with " throw usage error
+
+      iterate through set
+
+         if char is \
+            
+            treat as escape character
+
+         else
+
+            treat as regular character
+
+   while not getchar doesn't return EOF
+
+      if the char is a match for set1
+
+         either print replacement to stdout or do nothing (ternary with dFlag)
+
+   end program
+}
